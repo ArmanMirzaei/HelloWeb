@@ -2,6 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <title>Amschaspanden</title>
     <style>
         /* Normal Styles */
         body { /* Lightmode Style */
@@ -18,9 +19,65 @@
                 font-family: "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif; /* Font declaration */
             }
         }
+        /* Styles for the Button */
+        .round-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 40px;
+            height: 40px;
+            background-color: #007bff; /* Blue background color */
+            color: white; /* White text color */
+            border-radius: 50%; /* Makes the button round */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px; /* Adjust the font size as needed */
+            cursor: pointer;
+        }
+        
+        /* Styles for the Help Text Panel */
+        .help-text-panel {
+            position: fixed;
+            bottom: 80px;
+            right: 20px;
+            width: 200px;
+            background-color: #f0f0f0; /* Gray background color */
+            padding: 10px;
+            border: 1px solid #ccc;
+            display: none; /* Initially hidden */
+        }
+        
+        /* Checkbox Styles (hidden) */
+        .toggle-checkbox {
+            display: none;
+        }
+        
+        /* Label Styles (for toggling the panel) */
+        .toggle-label {
+            cursor: pointer;
+            text-decoration: underline;
+            color: blue;
+        }
+        
+        /* Checkbox Hack (to toggle the panel) */
+        .toggle-checkbox:checked + .help-text-panel {
+            display: block;
+        }
     </style>
 </head>
 <body>
-    <h1>"Hello, World!درود گیتی"</h1>
+    <h1 style="text-align: center;">Amschaspanden | اَمشاسپندان</h1>
+    <!-- Round Button with Label (i) -->
+    <label class="round-button" for="help-toggle">ℹ</label>
+    
+    <!-- Hidden Checkbox (used for toggling the panel) -->
+    <input type="checkbox" id="help-toggle" class="toggle-checkbox">
+    
+    <!-- Help Text Panel -->
+    <div class="help-text-panel">
+        <p>This is the help text panel.</p>
+        <p>You can put your help text here.</p>
+    </div>
 </body>
 </html>
