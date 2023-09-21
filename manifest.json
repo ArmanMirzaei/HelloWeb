@@ -1,0 +1,17 @@
+{
+  "name": "Amschaspanden",
+  "short_name": "Amshspndn",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#fff",
+  "description": "Intelligence Assistance service.",
+  "icons": [
+    {
+      "src": "apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+  ],
+  "categories": ["chatbot", "artificialintelligence"]
+}
+
