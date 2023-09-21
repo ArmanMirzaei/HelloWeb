@@ -11,6 +11,8 @@
     <style>
         /* Normal Styles */
         body { /* Lightmode Style */
+            touch-action:none;
+            position: fixed;
             background-color: rgb(220, 220, 220); /* Realistic White */
             color: rgb(30, 30, 30); /* Light Black */
             font-family: "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif; /* Font declaration */
@@ -22,6 +24,8 @@
         /* Media Query for Dark Mode */
         @media (prefers-color-scheme: dark) { /* Darkmode Style */
             body {
+                touch-action:none;
+                position: fixed;
                 background-color: rgb(30, 30, 30); /* Light Black */
                 color: rgb(220, 220, 220); /* Realistic White */
                 font-family: "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif; /* Font declaration */
