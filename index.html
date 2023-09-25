@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="robots" content="index,follow">
@@ -14,6 +14,13 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, touch-action=manipulation, user-scalable=no">
+    <meta name="revisit-after" content="7 days">
+    <meta name="revised" content="2023-9">
+    <meta name="author" content="info@amschaspanden.com">
+    <meta name="designer" content="info@amschaspanden.com">
+    <meta name="owner" content="info@amschaspanden.com">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta name="subject" content="Artificialintelligence Assistance">
     <title>Amschaspanden</title>
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -25,7 +32,7 @@
             background-color: rgb(220, 220, 220); /* Realistic White */
             color: rgb(30, 30, 30); /* Light Black */
             font-family: "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif; /* Font declaration */
-            --object-bg-color: rgba(220, 220, 220, 0.5); 
+            --object-bg-color: rgba(220, 220, 220, 0.75); 
             --background-color: rgb(220,220,220);
             --color: rgb(30, 30, 30);
         }
@@ -38,43 +45,10 @@
                 background-color: rgb(30, 30, 30); /* Light Black */
                 color: rgb(220, 220, 220); /* Realistic White */
                 font-family: "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif; /* Font declaration */
-                --object-bg-color: rgba(30, 30, 30, 0.5); 
+                --object-bg-color: rgba(30, 30, 30, 0.75); 
                 --background-color: rgb(30,30,30);
                 --color: rgb(220, 220, 220);
             }
-        }
-        /* Styles for the Button */
-        .round-button {
-            position: fixed;
-            bottom: min(4vw, 4vh);
-            right: min(4vw, 4vh);
-            width: min(10vw, 10vh);
-            height: min(10vw, 10vh);
-            border-radius: 50%; /* Makes the button round */
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 24px; /* Adjust the font size as needed */
-            cursor: pointer;
-        }
-        
-        .round-button::before {
-            content: "";
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            background-color: var(--object-bg-color); /* Half-alpha transparent black */
-            border-radius: 50%; /* Ensure the pseudo-element is also round */
-        }
-        
-        .round-button::after {
-            content: "";
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            border: 2px solid #B4281E; /* Red border */
-            box-sizing: border-box;
-            border-radius: 50%; /* Ensure the pseudo-element is also round */
         }
 
         /* Styles for the Help Text Panel */
@@ -91,20 +65,13 @@
             border: 1px solid rgb(128,128,128);
             border-radius: 10px; /* Adjust the value to control the roundness */
             display: none; /* Initially hidden */
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px); /* Add this line first, it fixes blur for Safari*/
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px); /* Add this line first, it fixes blur for Safari*/
         }
         
         /* Checkbox Styles (hidden) */
         .toggle-checkbox {
             display: none;
-        }
-        
-        /* Label Styles (for toggling the panel) */
-        .toggle-label {
-            cursor: pointer;
-            text-decoration: underline;
-            color: blue;
         }
         
         /* Checkbox Hack (to toggle the panel) */
@@ -115,7 +82,7 @@
 </head>
 <body style="overflow: hidden;">
     <header>
-        <h1 style="text-align: center;">Amschaspanden<a href="https://de.wikipedia.org/wiki/Amschaspand" style="color: #B4281E; text-decoration: none; font-size: 16px;"> (?)</a> | 八仙们<!--اَمشاسپندان--></h1>
+        <h1 style="text-align: center;"> Amschaspanden<a href="https://de.wikipedia.org/wiki/Amschaspand" style="color: #B4281E; text-decoration: none; font-size: 16px;"> (?)</a> | 八仙们 <!--اَمشاسپندان--></h1>
     </header>
     <hr color="gray">
     <div>
@@ -124,7 +91,7 @@
     </footer>
     
     <!-- Round Button with Label (i) -->
-    <label class="round-button" for="help-toggle" style="-webkit-user-select: none; /* Safari */ -ms-user-select: none; /* IE 10 and IE 11 */ user-select: none; ">☰</label>
+    <label class="round-button" for="help-toggle" style="position: fixed; bottom: min(4vw, 4vh); right: min(4vw, 4vh); width: min(10vw, 10vh); height: min(10vw, 10vh); min-width: 32px; min-height: 32px; border-radius: 50%; /* Makes the button round */ display: flex; align-items: center; justify-content: center; font-size: 24px; /* Adjust the font size as needed */ cursor: pointer; background-color: var(--object-bg-color); /* Half-alpha transparent black*/ border: 2px solid #B4281E; /* Red border */ -webkit-user-select: none; /* Safari */ -ms-user-select: none; /* IE 10 and IE 11 */ user-select: none; ">☰</label>
     
     <!-- Hidden Checkbox (used for toggling the panel) -->
     <input type="checkbox" id="help-toggle" class="toggle-checkbox">
