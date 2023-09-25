@@ -25,7 +25,7 @@
             background-color: rgb(220, 220, 220); /* Realistic White */
             color: rgb(30, 30, 30); /* Light Black */
             font-family: "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif; /* Font declaration */
-            --button-bg-color: rgba(220, 220, 220, 0.5); 
+            --object-bg-color: rgba(220, 220, 220, 0.5); 
             --background-color: rgb(220,220,220);
             --color: rgb(30, 30, 30);
         }
@@ -38,7 +38,7 @@
                 background-color: rgb(30, 30, 30); /* Light Black */
                 color: rgb(220, 220, 220); /* Realistic White */
                 font-family: "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif; /* Font declaration */
-                --button-bg-color: rgba(30, 30, 30, 0.5); 
+                --object-bg-color: rgba(30, 30, 30, 0.5); 
                 --background-color: rgb(30,30,30);
                 --color: rgb(220, 220, 220);
             }
@@ -63,7 +63,7 @@
             position: absolute;
             width: 100%;
             height: 100%;
-            background-color: var(--button-bg-color); /* Half-alpha transparent black */
+            background-color: var(--object-bg-color); /* Half-alpha transparent black */
             border-radius: 50%; /* Ensure the pseudo-element is also round */
         }
         
@@ -83,14 +83,16 @@
             top: 50%; /* Position from the top */
             left: 50%; /* Position from the left */
             transform: translate(-50%, -50%); /* Center horizontally and vertically */
-            width: 95%; /* 95% width of the screen horizontally */
+            width: 95vw; /* 95% width of the screen horizontally */
             /*max-width: 400px; /* Optional: Set a maximum width */
-            height: 80vh; /* 80% height of the viewport vertically */
-            background-color: var(--background-color);
+            height: 90vh; /* 80% height of the viewport vertically */
+            background-color: var(--object-bg-color);
             padding: 10px;
             border: 1px solid rgb(128,128,128);
             border-radius: 10px; /* Adjust the value to control the roundness */
             display: none; /* Initially hidden */
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px); /* Add this line first, it fixes blur for Safari*/
         }
         
         /* Checkbox Styles (hidden) */
@@ -113,7 +115,7 @@
 </head>
 <body style="overflow: hidden;">
     <header>
-        <h1 style="text-align: center;">Amschaspanden<a href="https://de.wikipedia.org/wiki/Amschaspand" style="color: #B4281E; text-decoration: none; font-size: 16px;"> (i)</a> | اَمشاسپندان</h1>
+        <h1 style="text-align: center;">Amschaspanden<a href="https://de.wikipedia.org/wiki/Amschaspand" style="color: #B4281E; text-decoration: none; font-size: 16px;"> (?)</a> | 八仙们<!--اَمشاسپندان--></h1>
     </header>
     <hr color="gray">
     <div>
@@ -129,8 +131,8 @@
     
     <!-- Help Text Panel -->
     <div class="help-text-panel">
-        <p>This is the help text panel.</p>
-        <p>You can put your help text here.</p>
+        <pre>Amschaspanden | اَمشاسپندان   >   Indexmenu<br>  Accountings<br>  Premiums<br>  Generalinfo<br>    about us<br>    privacy policy<br>    regulatory
+        </pre>
     </div>
 </body>
 </html>
