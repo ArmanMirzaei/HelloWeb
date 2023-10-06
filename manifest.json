@@ -1,9 +1,9 @@
 {
   "name": "Amschaspanden",
   "short_name": "Amshspndn",
-  "start_url": ".",
+  "start_url": "/",
   "display": "standalone",
-  "background_color": "#B4281E",
+  "_background_color": "#B4281E",
   "description": "Industrial Intelligence Assistance service.",
   "icons": [
     {
