@@ -1,2 +1,2 @@
 # HelloWeb
-playing arround to evolve a webservice workflow
+a playground project to evolve a webservice workflow
